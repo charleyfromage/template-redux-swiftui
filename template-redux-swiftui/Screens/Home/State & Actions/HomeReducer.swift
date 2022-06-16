@@ -2,22 +2,22 @@ import Combine
 
 let homeReducer: Reducer<Home.State, Home.Action, EnvironmentInterface> = Reducer { state, action, environment in
     switch action {
-        case .fetchItems:
-            return environment.fetchItemsInteractor.fetchItems()
-                .map { items in
-                    .didFetchItems(items)
+        case .fetchAlbums:
+            return environment.fetchAlbumsInteractor.fetchAlbums()
+                .map { albums in
+                    .didFetchAlbums(albums)
                 }
                 .catch { error -> Just<Home.Action> in
                     return Just(.doSomethingWithError(error))
                 }
                 .eraseToAnyPublisher()
 
-        case .didFetchItems(let items):
-            state.hasFetchedItems = true
-            state.items = items
+        case .didFetchAlbums(let albums):
+            state.hasFetchedAlbums = true
+            state.albums = albums
 
         case .doSomethingWithError:
-            state.hasFetchedItems = true
+            state.hasFetchedAlbums = true
             /// Handle errors here
             /// Alternatively, errors can be intercepted at application level in the applicationReducer)
     }

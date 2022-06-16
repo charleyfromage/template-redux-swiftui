@@ -5,23 +5,23 @@ struct HomeContainerView: View {
 
     var body: some View {
         Group {
-            if !store.state.hasFetchedItems {
+            if !store.state.hasFetchedAlbums {
                 ProgressView()
                     .onAppear {
-                        fetchItems()
+                        fetchAlbums()
                     }
             } else {
-                if store.state.items.count == 0 {
-                    Text("No items")
+                if store.state.albums.count == 0 {
+                    Text("No albums")
                 } else {
-                    HomeView(items: store.state.items)
+                    HomeView(albums: store.state.albums)
                 }
             }
         }
-        .navigationTitle("Items")
+        .navigationTitle("Albums")
     }
 
-    private func fetchItems() {
-        store.send(.fetchItems)
+    private func fetchAlbums() {
+        store.send(.fetchAlbums)
     }
 }

@@ -1,7 +1,7 @@
 extension Home {
     enum Action {
-        case fetchItems
-        case didFetchItems([Item])
+        case fetchAlbums
+        case didFetchAlbums([Album])
         case doSomethingWithError(Error)
     }
 }

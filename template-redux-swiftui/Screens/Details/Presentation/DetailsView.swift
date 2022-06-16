@@ -1,10 +1,15 @@
 import SwiftUI
 
 struct DetailsView: View {
-    var itemName: String
+    var album: Album
     
     var body: some View {
-        Text("This is the item details view")
-            .navigationTitle(itemName)
+        Text("Artist: \(album.artist ?? "")")
+        Text("Label: \(album.label ?? "")")
+        Text("Year: \(album.year ?? "")")
+        List(album.tracks, id: \.self) { track in
+            Text(track)
+        }
+        .navigationTitle(album.name ?? "")
     }
 }

@@ -28,9 +28,9 @@
 		B271CA62283E1F3900A903A4 /* HomeAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B271CA61283E1F3900A903A4 /* HomeAction.swift */; };
 		B271CA64283E1F4500A903A4 /* HomeReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B271CA63283E1F4500A903A4 /* HomeReducer.swift */; };
 		B271CA66283E1F5900A903A4 /* HomeConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = B271CA65283E1F5900A903A4 /* HomeConnector.swift */; };
-		B271CA73283E26B200A903A4 /* FetchItemsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B271CA72283E26B200A903A4 /* FetchItemsInteractor.swift */; };
-		B271CA76283E27FC00A903A4 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = B271CA75283E27FC00A903A4 /* Item.swift */; };
-		B271CA7C283E62D500A903A4 /* ItemsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B271CA7B283E62D500A903A4 /* ItemsService.swift */; };
+		B271CA73283E26B200A903A4 /* FetchAlbumsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B271CA72283E26B200A903A4 /* FetchAlbumsInteractor.swift */; };
+		B271CA76283E27FC00A903A4 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = B271CA75283E27FC00A903A4 /* Album.swift */; };
+		B271CA7C283E62D500A903A4 /* AlbumsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B271CA7B283E62D500A903A4 /* AlbumsService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,9 +56,9 @@
 		B271CA61283E1F3900A903A4 /* HomeAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAction.swift; sourceTree = "<group>"; };
 		B271CA63283E1F4500A903A4 /* HomeReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeReducer.swift; sourceTree = "<group>"; };
 		B271CA65283E1F5900A903A4 /* HomeConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeConnector.swift; sourceTree = "<group>"; };
-		B271CA72283E26B200A903A4 /* FetchItemsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchItemsInteractor.swift; sourceTree = "<group>"; };
-		B271CA75283E27FC00A903A4 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
-		B271CA7B283E62D500A903A4 /* ItemsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsService.swift; sourceTree = "<group>"; };
+		B271CA72283E26B200A903A4 /* FetchAlbumsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchAlbumsInteractor.swift; sourceTree = "<group>"; };
+		B271CA75283E27FC00A903A4 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		B271CA7B283E62D500A903A4 /* AlbumsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,7 +210,7 @@
 		B271CA71283E269500A903A4 /* Interactors */ = {
 			isa = PBXGroup;
 			children = (
-				B271CA72283E26B200A903A4 /* FetchItemsInteractor.swift */,
+				B271CA72283E26B200A903A4 /* FetchAlbumsInteractor.swift */,
 			);
 			path = Interactors;
 			sourceTree = "<group>";
@@ -218,7 +218,7 @@
 		B271CA74283E27EA00A903A4 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				B271CA75283E27FC00A903A4 /* Item.swift */,
+				B271CA75283E27FC00A903A4 /* Album.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -226,7 +226,7 @@
 		B271CA7A283E62C200A903A4 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				B271CA7B283E62D500A903A4 /* ItemsService.swift */,
+				B271CA7B283E62D500A903A4 /* AlbumsService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -308,11 +308,11 @@
 				B271CA62283E1F3900A903A4 /* HomeAction.swift in Sources */,
 				B271CA64283E1F4500A903A4 /* HomeReducer.swift in Sources */,
 				B271CA66283E1F5900A903A4 /* HomeConnector.swift in Sources */,
-				B271CA73283E26B200A903A4 /* FetchItemsInteractor.swift in Sources */,
+				B271CA73283E26B200A903A4 /* FetchAlbumsInteractor.swift in Sources */,
 				B271CA60283E1F2E00A903A4 /* HomeState.swift in Sources */,
-				B271CA76283E27FC00A903A4 /* Item.swift in Sources */,
+				B271CA76283E27FC00A903A4 /* Album.swift in Sources */,
 				B271C9AA283E1C0200A903A4 /* Environment.swift in Sources */,
-				B271CA7C283E62D500A903A4 /* ItemsService.swift in Sources */,
+				B271CA7C283E62D500A903A4 /* AlbumsService.swift in Sources */,
 				B271CA39283E1C0200A903A4 /* ApplicationState.swift in Sources */,
 				B271CA36283E1C0200A903A4 /* ApplicationAction.swift in Sources */,
 				B271CA54283E1DC200A903A4 /* HomeContainerView.swift in Sources */,

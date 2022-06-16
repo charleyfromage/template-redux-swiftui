@@ -1,3 +1,3 @@
 protocol EnvironmentInterface {
-    var fetchItemsInteractor: FetchItemsInteractor { get }
+    var fetchAlbumsInteractor: FetchAlbumsInteractor { get }
 }

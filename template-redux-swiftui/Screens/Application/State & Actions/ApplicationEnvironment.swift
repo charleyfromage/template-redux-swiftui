@@ -1,9 +1,9 @@
 extension Application {
     struct Environment: EnvironmentInterface {
-        let fetchItemsInteractor: FetchItemsInteractor
+        let fetchAlbumsInteractor: FetchAlbumsInteractor
 
         init() {
-            self.fetchItemsInteractor = FetchItemsInteractorImpl(service: ItemsServiceImpl())
+            self.fetchAlbumsInteractor = FetchAlbumsInteractorImpl(service: AlbumsServiceImpl())
         }
     }
 }
